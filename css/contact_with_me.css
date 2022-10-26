@@ -1,0 +1,68 @@
+section.contact .contact-me::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+section.contact .contact-me .left{
+    float: left;
+    width: 30%;
+}
+section.contact .contact-me .left .card{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+section.contact .contact-me .left .card .icon i{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+section.contact .contact-me .right{
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+section.contact .contact-me .right .form-group{
+    margin-bottom: 1.25rem;
+}
+/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+section.contact .contact-me .right .form-group label{
+    display: block;
+    margin-bottom: 0.85rem;
+}
+section.contact .contact-me .right .form-group input{
+    padding: 0.625rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+section.contact .contact-me .right .form-group input:focus{
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+section.contact .contact-me .right .form-group textarea{
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+section.contact .contact-me .right .form-group textarea:focus{
+    outline: none;
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+section.contact .contact-me .right button{
+    width: 100%;
+    padding: 1rem;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+}

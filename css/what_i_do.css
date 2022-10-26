@@ -1,0 +1,42 @@
+/*float 속성 해제*/
+section .do-me::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+/*사각형 크기와 간격, 내부 여백 설정*/
+section .do-me .do-inner{
+    margin-right: 5%;
+    padding: 2rem;
+    width: 30%;
+    cursor: pointer;
+    background-color: white;
+    float: left;
+}
+/*.do-inner의 마지막 사각형 외부 여백 0지정*/
+section .do-me .do-inner:last-child{
+    margin-right: 0;
+}
+/*아이콘 폰트 크기와 색 설정*/
+section .do-me .do-inner .icon i{
+    font-size: 2.5rem;
+    color: #ff6a6a;
+}
+/*h3에 입력된 값 폰트 사이즈, 간격 설정*/
+section .do-me .do-inner .content h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+/*사각형 텍스트 크기*/
+section .do-me .do-inner .content p{
+    font-size: 1.1rem;
+}
+/*do-inner 클래스에 마우스를 올리면 배경색,폰트 색 변경*/
+section .do-me .do-inner:hover{
+    background-color: lightcoral;
+    color: white;
+}
+/*do-inner 클래스에 마우스 올리면 아이콘 색 변경*/
+section .do-me .do-inner:hover i{
+    color: white;
+}

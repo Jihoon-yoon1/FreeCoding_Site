@@ -1,0 +1,55 @@
+section{
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+section:nth-child(2n){
+    background-color: white;
+}
+section .title{
+    margin-bottom: 3rem;
+}
+section .title h4{
+    position: relative;
+    color: red;
+    font-size: 1.3rem;
+}
+section .title h2{
+    position: relative;
+    font-size: 3.3rem;
+}
+/* float 속성 해제*/
+section .about-self::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 본문 너비 절반 지정 & 왼쪽 배치 */
+section .about-self .left{
+    float: left;
+    width: 50%;
+}
+/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+section .about-self .left img{
+    max-width: 100%;
+}
+/* 본문 너비 절반 지정 & 오른쪽 배치 */
+section .about-self .right{
+    width: 50%;
+    float: left;
+    padding: 0 2rem; 
+}
+section .about-self .right h3{
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+section .about-self .right strong{
+    color: red;
+}
+section .about-self .right p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+section .about-self .social a{
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
